@@ -91,6 +91,52 @@
    }
    
    div {
+ --favorite-color: #C22207;
+ --white: #fff;
+ --black: #000;
+ --secondary-color: #cea10d;
+}
+/*Add any consistant variables*/
+
+* {
+    background-color: var(--black);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: var(--white);
+}
+
+h1, #headshot-jpg, #header-links {
+    display: flex;
+    justify-content: center;
+}
+#header-links a {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* header h1::first-letter {
+    color: #C22207;
+} 
+Add styling for header
+*/
+
+header img {
+    border-radius: 10px;
     background-color: var(--favorite-color);
        
    }
