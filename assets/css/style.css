@@ -8,6 +8,7 @@
 
 * {
     background-color: var(--black);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -17,16 +18,23 @@ body {
 }
 
 header {
-
-}
-
-header h1 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     font-size: 5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: var(--white);
+}
+
+h1, #headshot-jpg, #header-links {
+    display: flex;
+    justify-content: center;
+}
+#header-links a {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px;
 }
 
 /* header h1::first-letter {
