@@ -1,0 +1,38 @@
+:root {
+ --favorite-color: #C22207;
+ --white: #fff;
+ --black: #000;
+ --secondary-color: #FFC300;
+}
+/*Add any consistant variables*/
+
+* {
+    background-color: var(--black);
+}
+
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: var(--white);
+}
+
+/* header h1::first-letter {
+    color: #C22207;
+} 
+Add styling for header
+*/
+
+
