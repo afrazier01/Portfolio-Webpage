@@ -25,6 +25,7 @@
    header * {
        padding: 5px;
    }
+   
    h1 {
        font-size: 8rem;
        font-weight: bolder;
@@ -85,16 +86,32 @@
    .work {
        display: flex;
    }
-   
-   img[href] {
-       width: 500px
-   }
-   
+
    div {
-    background-color: var(--favorite-color);
-       
+    background-color: var(--favorite-color);      
    }
-   /* height: 800px;
+
+   section {
+    background-color: var(--favorite-color);
+   }
+
+   .txtover a {
+    background-color: var(--favorite-color);
+   }
+
+   figcaption {
+    background-color: var(--favorite-color);
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-style: italic;
+   }
+
+   #resume-background {
+    background-color: var(--favorite-color);
+    margin: 0;
+    padding: 10px;
+   }
+     /* height: 800px;
        width: 100%;
        margin-bottom: 25px;
        background-image: url("../images/digital-marketing-meeting.jpg");
