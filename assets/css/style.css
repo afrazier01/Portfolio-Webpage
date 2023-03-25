@@ -2,7 +2,7 @@
  --favorite-color: #C22207;
  --white: #fff;
  --black: #000;
- --secondary-color: #FFC300;
+ --secondary-color: #cea10d;
 }
 /*Add any consistant variables*/
 
@@ -43,4 +43,86 @@ h1, #headshot-jpg, #header-links {
 Add styling for header
 */
 
+header img {
+    border-radius: 10px;
+    background-color: var(--favorite-color);
+}
 
+.header-links a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.header-links a:hover {
+    color: var(--favorite-color);
+    font-size: bolder;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content article {
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #C22207;
+    display: flex;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.txtover {
+    position: relative;
+    margin: 30px;
+}
+
+.txtover figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.work {
+    display: flex;
+}
+
+img[href] {
+    width: 500px
+}
+
+div {
+ background-color: var(--favorite-color);
+    
+}
+/* height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center */
+
+footer {
+    padding: 30px;
+    background-color: var(--favorite-color);
+}
+
+.contact-me * {
+    background-color: var(--favorite-color);
+    color: var(--secondary-color);
+}
+
+#resume-background-image {
+    height: 400px;
+    width: auto;
+    
+}
