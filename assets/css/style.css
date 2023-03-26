@@ -114,14 +114,16 @@ p {
     flex-wrap: wrap;
     align-items: center;
 }
-
-.surf-rport {
+/* .surf-report {
     flex-grow: 2;
-}
+} */
+
+/*Play with this*/
 
 .surf-rport {
     flex-grow: 4 0 0;
 }
+
 
 .resume {
     display: flex;
