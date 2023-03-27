@@ -69,8 +69,7 @@ section {
 }
 
 section a, figcaption, figure a {
-    background-color: var(--favorite-color);
-    color: var(--secondary-color);
+    color: var(--favorite-color);
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
