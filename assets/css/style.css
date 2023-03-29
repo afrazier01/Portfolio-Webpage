@@ -102,6 +102,14 @@ p {
     bottom: 0;
     left: 0;
     padding: 20px;
+    
+}
+
+.txtover *:hover {
+    font-weight: bold;
+    -webkit-text-stroke: 3px;
+    -webkit-text-fill-color: var(--favorite-color);
+    text-decoration: underline;
 }
 
 .content img {
@@ -134,11 +142,11 @@ p {
     flex-wrap: wrap;
     align-items: center;
 }
-/* .surf-report {
+.surf-report {
     flex-grow: 2;
-} */
+}
 
-/*Play with this*/
+/*Play with this */
 
 #work h2 {
     color: var(--secondary-color);
@@ -151,15 +159,6 @@ p {
     -webkit-text-fill-color: var(--favorite-color);
 
 }
-
-.content img:hover {
-    margin: 0
-}
-
-.surf-rport {
-    flex-grow: 4 0 0;
-}
-
 
 .resume {
     display: flex;
@@ -226,3 +225,18 @@ footer img {
     font-style: italic;
     font-weight: bold;
 }
+
+ /* Media Queries  
+@media screen and (max-width: 326px) {
+    #header {
+        background-color: darkblue;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+
+    #header * {
+        background-color: darkblue;
+    }
+} */
