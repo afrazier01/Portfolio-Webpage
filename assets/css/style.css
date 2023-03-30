@@ -16,6 +16,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 16px;
     /* border-style: solid;
     border-width: 5px;
     border-radius: 50px 50px;
@@ -23,26 +24,38 @@ header {
 }
 
 header * {
-    padding: 5px;
+    margin: 2px;
+    text-align: center;
 }
 h1 {
-    font-size: 8rem;
+    font-size: 2.5rem;
     font-weight: bolder;
-    color: var(--favorite-color);
-    -webkit-text-stroke: 2px;
-    -webkit-text-fill-color: var(--black);
+    color: var(--black);
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: var(--favorite-color);
+    width: 97%;
+    text-align: center;
+    border-radius: 50px;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 10px 5px var(--favorite-color);
+    border-color: var(--favorite-color);
+    margin-bottom: 16px;
 }
 
 header img {
-    border-radius: 10px;
-    background-color: var(--favorite-color);
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--favorite-color);
+    width: 95%;
 }
 
 .header-links a {
     margin-top: 10px;
     text-decoration: none;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 1.25rem;
 }
 
 .header-links a:hover {
@@ -62,17 +75,26 @@ header img {
     border-style: dotted;
     border-width: 5px;
     border-color: #C22207;
+    width: 95%;
+    border-radius: 50px;
 }
 
 section {
-    background-color: var(--favorite-color);
+    width: 95%;
+    /* border-radius: 50px; */
+}
+
+figure img {
+    background-color: var(--secondary-color);
 }
 
 section a, figcaption, figure a {
     color: var(--favorite-color);
     font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif; 
 }
+
+
 
 figcaption {
     padding: 10px;
@@ -80,29 +102,60 @@ figcaption {
     font-weight: bolder;
 }
 
+
+
 h2 {
-    font-size: 4rem;
+    font-size: 2rem;
+    font-style: italic;
 }
 
 h3 {
     font-size: 1rem;
 }
 
-p {
+#about-me p {
     font-family: 'Open Sans', sans-serif;
 }
 
 .txtover {
     position: relative;
-    margin: 30px;
+    border-radius: 50px;
+}
+
+#txtover img {
+    /*only the image links within work section*/
+    display: block;
+    width: 75%;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--favorite-color);
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(8deg);
+    box-shadow: 10px 10px 5px var(--favorite-color);
+    margin-bottom: 30px;
+}
+
+.txtover img {
+    display: block;
+    width:75%;
+    height:100%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--favorite-color);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .txtover figcaption {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 20px;
-    
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .txtover *:hover {
@@ -113,7 +166,7 @@ p {
 }
 
 .content img {
-    margin: 5px;
+    margin-bottom: 16px;
 }
 
 #about-me {
@@ -121,17 +174,23 @@ p {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    width: 500px;
 }
 
-#about-me p {
+ p {
     color: var(--favorite-color);
     font-style: italic;
+    font-size: .5rem;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 50px;
 }
 
 #about-me h2 {
     color: var(--favorite-color);
     font-weight: bold;
+    margin: 5px
 }
 
 .work {
@@ -142,6 +201,12 @@ p {
     flex-wrap: wrap;
     align-items: center;
 }
+
+#work {
+    width: 95%;
+    border-radius: 50px;
+}
+
 .surf-report {
     flex-grow: 2;
 }
@@ -164,7 +229,29 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#header-resume {
+    border-radius: 50px;
+    padding: 15px;
     background-color: var(--favorite-color);
+    -webkit-text-stroke: 2px;
+    -webkit-text-fill-color: var(--favorite-color);
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--secondary-color);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+
+    /* 
+    color: var(--secondary-color);
+    font-style: italic;
+    padding: 10px;
+    background-color: var(--favorite-color);
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-fill-color: var(--favorite-color); */
 }
 
 .resume h2 {
@@ -187,8 +274,11 @@ div {
     background-position: center */
 
 footer {
-    padding: 30px;
     background-color: var(--favorite-color);
+}
+
+div p {
+    margin: 0;
 }
 
 .contact-me * {
@@ -198,8 +288,14 @@ footer {
 }
 
 #resume-background-image {
-    height: 400px;
-    width: auto;   
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resume-img figcaption {
+    font-size: 1rem;
+    margin-bottom: 15px;
 }
 
 footer a:hover {
@@ -213,30 +309,27 @@ footer img {
     width: 18px;
 }
 
+footer h2 {
+    text-align: center;
+}
+
 #contact-me p {
-    background-color: var(--secondary-color);
+    background-color: var(--favorite-color);
     padding: 10px;
-    color: var(--favorite-color);
+    color: var(--secondary-color);
 }
 
 #contact-me a {
-    background-color: var(--secondary-color);
-    color: var(--favorite-color);
+    background-color: var(--favorite-color);
+    color: var(--secondary-color);
     font-style: italic;
     font-weight: bold;
 }
 
- /* Media Queries  
-@media screen and (max-width: 326px) {
-    #header {
-        background-color: darkblue;
-        flex-direction: row;
-        flex-wrap: wrap;
+/* media query for screens bigger than 768px */
+@media screen and (min-width: 768px) {
+    header {
+      
+      background-color: aqua;
     }
-
-
-
-    #header * {
-        background-color: darkblue;
-    }
-} */
+  }
