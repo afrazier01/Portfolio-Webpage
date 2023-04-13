@@ -17,7 +17,7 @@ N/A
 
 ## Usage
 
-Click [Here](https://afrazier01.github.io/challenge-2/) to go to the deloyed webpage. 
+Click [Here](https://afrazier01.github.io/Portfolio-Webpage/) to go to the deloyed webpage. 
 
 Once the webpage is open, use Chrome DevTools by right-clicking and selecting inspect; or for windows - Control + Shift + I and for MacOS - Command + Option + I. Navigate to the arrow in the top left of the corner of the panel and select it, then hover mouse arrow over images to look at image descriptions. Toggle device emulation to change screen layout and see how the webpage evolves.
 
