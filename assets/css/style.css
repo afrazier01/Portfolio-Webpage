@@ -224,9 +224,6 @@ h3 {
     border-radius: 50px;
 }
 
-.surf-report {
-    flex-grow: 2;
-}
 
 /*Play with this */
 
@@ -341,7 +338,7 @@ footer h2 {
         flex-wrap: wrap;
         /* align-items: end; */
         margin-bottom: 0;
-        background-image: url(../images/header-background-img.png);
+        background-color: var(--jay-hawk-blue);
         border-radius: none;
         border-width: 2px;
         border-style: solid;
@@ -465,19 +462,20 @@ footer h2 {
         flex-direction: row;
         flex-wrap: wrap;
         background-color: transparent;
+        width: 60%;
     }
 
     .section-elements section {
-        /* height: 100px; */
-        width: 49.3%;
+        height: 200px;
+        width: 100%;
         border-style: solid;
         border-width: 2px;
     }
 
-    .section-elements section:first-child {
-        width: 100%;
+    /* .section-elements section:first-child {
+        width: 50%;
         flex-grow: 1;
-    }
+    } */
 
 
     #work h2 {
@@ -496,7 +494,7 @@ footer h2 {
 
     #txtover img {
         /*only the image links within work section*/
-        height: 150px;
+        height: 200px;
         width: 100%;
         border-radius: 0;
         border-style: none;
@@ -519,7 +517,7 @@ footer h2 {
     .resume {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        align-items: center;
     }
 
     #resume figure {
@@ -559,9 +557,6 @@ footer h2 {
         display: flex;
     }
 
-    #txtover * {
-        width: 75%;
-    }
     
 
 
@@ -574,12 +569,13 @@ footer h2 {
 
     .content-elements {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         margin-bottom: 25px;
     }
 
     #work {
-        width: auto;
+        width: 75%;
     }
 
     #resume {
@@ -615,7 +611,7 @@ footer h2 {
     
 
     figcaption {
-        background-image: url(../images/header-background-img.png);
+        background-color: rgba(0, 0, 0, 0.565);
     }
 
     #contact-me *,#contact-me div *,#contact-me {
